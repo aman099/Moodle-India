@@ -629,7 +629,7 @@ details.dropdown summary + ul[role="nav-drop"] {
 @media only screen and (max-width: 1000px) {
   /* Overlay */
   .overlay {
-    transition: all 1s;
+    display: none;
   }
   .overlay.activate {
     display: grid;
@@ -642,15 +642,28 @@ details.dropdown summary + ul[role="nav-drop"] {
     z-index: 100;
     /*  */
     transition: all 1s;
+    animation: fadeIn 1s forwards ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      background-color: transparent;
+    }
+    100% {
+      opacity: 1;
+      background-color: #fff;
+    }
   }
   .overlay.activate .input-overlay-container {
     width: 80%;
   }
   .overlay .input-overlay-container input {
-    opacity: 0;
-    transform: translateY(-10%);
-    transition: all 1s;
+    /* opacity: 0; */
+    /* transform: translateY(-10%); */
+    /* transition: all 1s; */
+    /*  */
   }
+
   .overlay.activate .input-overlay-container input {
     opacity: 1;
     transform: translateY(0%);
@@ -664,6 +677,18 @@ details.dropdown summary + ul[role="nav-drop"] {
     font-size: 24px;
     /*  */
     transition: all 1s;
+    animation: dropIn 1s forwards ease-in-out;
+    /* animation-delay: 0.4s; */
+  }
+  @keyframes dropIn {
+    0% {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-20%);
+      opacity: 1;
+    }
   }
   .overlay.activate .input-overlay-container input::placeholder {
     font-size: 28px;
@@ -686,6 +711,17 @@ details.dropdown summary + ul[role="nav-drop"] {
     /*  */
     display: grid;
     place-content: center;
+    animation: dropCross 1s forwards ease-in-out;
+  }
+  @keyframes dropCross {
+    0% {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
   }
   .overlay.activate span:active {
     color: var(--icon-color);
@@ -729,6 +765,7 @@ details.dropdown summary + ul[role="nav-drop"] {
   /* hero section */
   .hero-section {
     margin-top: 0;
+    padding-top: 92px;
   }
 
   .section-container .heading-container h2 {
@@ -941,6 +978,7 @@ details.dropdown summary + ul[role="nav-drop"] {
   /*  */
   .hero-section {
     height: 70rem;
+    padding-top: 80px;
   }
   .hero-section .hero-title {
     font-size: 30px;

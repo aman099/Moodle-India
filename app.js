@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.querySelector(".overlay");
   const cross = document.querySelector(".overlay span");
   const searchNav = document.querySelector("#nav_2 .nav-btn label");
+  const hero_section = document.querySelector(".hero-section");
 
   searchNav?.addEventListener("click", () => {
     overlay?.classList.add("activate");
