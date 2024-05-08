@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+    <!-- Pari CSS -->
+    <link rel="stylesheet" href="./beauty/pari.css" />
+    <link rel="stylesheet" href="./beauty/components/navbar-pari.css" />
+    <link rel="stylesheet" href="./beauty/layout/container.css" />
+    <link rel="stylesheet" href="./beauty/helpers/flexbox.css" />
+    <link rel="stylesheet" href="./beauty/elements/button-pari.css" />
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Moodle India</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="overlay">
+      <div class="input-overlay-container">
+        <input type="text" placeholder="Enter your keywords..." />
+      </div>
+      <span><i class="fa-solid fa-x"></i></span>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-container">
+        <nav id="nav_1" class="container is-fullhd">
+          <header></header>
+          <input type="checkbox" id="nav-check" />
+          <div class="">
+            <label for="nav-check">
+              <!-- <span><i class="fa-solid fa-magnifying-glass"></i></span> -->
+              <!-- <span></span>
+              <span></span> -->
+            </label>
+          </div>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-ellipsis"></i></span>
+              <span><i class="fa-solid fa-ellipsis"></i></span>
+              <span><i class="fa-solid fa-ellipsis"></i></span>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <!-- <li><button class="primary-btn">Get Started</button></li> -->
+          </ul>
+        </nav>
+      </div>
+
+      <div class="navbar-container-2">
+        <nav id="nav_2" class="container is-fullhd">
+          <header>
+            <img src="./assets/moodle-logo-svg.svg" />
+          </header>
+          <ul>
+            <li>
+              <details class="dropdown">
+                <summary>Solutions</summary>
+                <ul role="nav-drop">
+                  <li><a href="#">Corporate LMS - On-premises (BizLMS)</a></li>
+                  <li>
+                    <a href="#">Education LMS – On Premises (CobaltLMS)</a>
+                  </li>
+                  <li><a href="#">Moodle Workplace – SaaS hosted</a></li>
+                  <li><a href="#">Moodle LMS</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary>Services</summary>
+                <ul role="nav-drop">
+                  <li><a href="#">Customization</a></li>
+                  <li><a href="#">Hosting</a></li>
+                  <li><a href="#">Support and Training</a></li>
+                  <!-- <li><a href="#">Logout</a></li> -->
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary>Customers</summary>
+                <ul role="nav-drop">
+                  <li><a href="#">K12</a></li>
+                  <li><a href="#">Higher Education</a></li>
+                  <li><a href="#">Vocational Training</a></li>
+                  <li><a href="#">Workspace</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary>Certified Integrations</summary>
+                <ul role="nav-drop">
+                  <li><a href="#">Learner script</a></li>
+                  <li><a href="#">Zatuk</a></li>
+                  <li><a href="#">Other Certified Integrations</a></li>
+                  <!-- <li><a href="#">Logout</a></li> -->
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary>About us</summary>
+                <ul role="nav-drop">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <!-- <input type="checkbox" id="nav-check" /> -->
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <ul>
+            <li><button class="outlined-btn btn">Contact Us</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Hero section -->
+    <div class="hero-section stars flex-center">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          Create engaging <br />
+          <span>online education</span> <br />
+          experiences.
+        </h1>
+        <p class="hero-subtitle">
+          The world’s most trusted and customisable online learning platform is
+          now in India. <br />
+          Explore our range of flexible LMS solutions and services to help you
+          maximise learner <br />
+          outcomes.
+        </p>
+        <div class="btn-container">
+          <button class="outlined-btn btn btn-2">
+            Get in touch <span><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="./assets/hero-right-img.webp" alt="" />
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Section-1 -->
+    <section id="section" class="section-1 container is-fullhd">
+      <div class="section-container">
+        <div class="heading-container">
+          <h2>Solutions</h2>
+        </div>
+        <div class="section-content display-flex-2x2-wrap">
+          <div class="img-container">
+            <img src="./assets/section-1_left.webp" alt="" />
+          </div>
+          <div class="section-right">
+            <h3>
+              Corporate LMS for <br />
+              employee training <br />
+              and onboarding
+            </h3>
+            <p>
+              Moodle BizLMS is our on-premise LMS designed for the rapidly
+              changing learning and development needs of Indian corporations.
+              With custom-friendly and scalable features, Moodle BizLMS is your
+              solution for employee training, onboarding and compliance.
+            </p>
+            <button class="outlined-btn btn btn-2">
+              View more <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section" class="section-2 container is-fullhd">
+      <div class="section-container">
+        <div class="heading-container">
+          <!-- <h2>Solutions</h2> -->
+        </div>
+        <div class="section-content is-flex-direction-row-reverse">
+          <div class="img-container">
+            <img src="./assets/section-2_right.webp" alt="" />
+          </div>
+          <div class="section-right">
+            <h3>
+              Higher education <br />
+              LMS on-premise <br />
+              Indian solution
+            </h3>
+            <p>
+              Built on Moodle LMS, our unique end-to-end on-premise solution for
+              Indian higher education institutions delivers engaging online
+              learning experiences and supports efficient academic and
+              administrative processes. Moodle CobaltLMS will move you beyond
+              delivering traditional classroom experiences to providing
+              e-Learning experiences that will improve the way you teach and
+              your students learn.
+            </p>
+            <button class="outlined-btn btn btn-2">
+              View more <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section" class="section-1 section-1_2">
+      <div class="section-container container is-fullhd">
+        <div class="heading-container">
+          <!-- <h2>Solutions</h2> -->
+        </div>
+        <div class="section-content">
+          <div class="img-container">
+            <img src="./assets/laptop_1.webp" alt="" />
+          </div>
+          <div class="section-right">
+            <h3>
+              Custom Moodle <br />
+              solutions for your <br />
+              unique challenges
+            </h3>
+            <ul>
+              <li>
+                Get a customised Moodle LMS solution to meet your goals and
+                requirements
+              </li>
+              <li>
+                Integrate Moodle with other platforms to create an efficient
+                e-Learning ecosystem.
+              </li>
+              <li>
+                Incorporate your branding to create an intuitive and
+                customisable Moodle theme
+              </li>
+              <li>
+                Personalise learning experiences with a branded and custom
+                Moodle App
+              </li>
+              <li>Extend your online learning ecosystem</li>
+              <li>With Certified Integrations vetted by Moodle</li>
+            </ul>
+            <button class="outlined-btn btn btn-2">
+              Contact us <span><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container is-fullhd">
+      <div class="features-heading">
+        <h3>
+          Supporting Indian organisations <br />
+          with services for Moodle LMS
+        </h3>
+      </div>
+      <div
+        class="features-container is-align-items-flex-end display-flex-2x2-wrap"
+      >
+        <div class="feature left-feature">
+          <div class="feature-img">
+            <img src="./assets/svg_1.webp" alt="" />
+          </div>
+          <h4>Flexible Moodle hosting solutions</h4>
+          <p>
+            Optimise your Moodle ecosystem by hosting it through Moodle India,
+            enhancing the learning experience for all users. Our robust
+            technical expertise ensures seamless operation, serving millions
+            error-free. Explore a MoodleCloud hosting plan tailored to your
+            organisation’s needs.
+          </p>
+        </div>
+        <div class="feature right-feature">
+          <div class="feature-img">
+            <img src="./assets/svg_2.svg" alt="" />
+          </div>
+          <h4>Get all things Moodle</h4>
+          <p>
+            Discover the vast potential of the Moodle ecosystem in establishing
+            a resilient e-Learning and training environment for your
+            organisation. Consult with us for any Moodle-related enquiries and
+            transform Moodle LMS into the core of your learning and development
+            initiatives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <article id="article" class="container is-fullhd">
+      <div
+        class="article-container display-flex-2x2-wrap is-align-items-flex-start is-justify-content-space-between"
+      >
+        <div class="left-article">
+          <h3>Who we work with</h3>
+        </div>
+        <div class="right-article">
+          <p>
+            We work with top-tier organisations to deliver exceptional learning
+            outcomes through our Moodle ecosystem of products and services. Our
+            customers vouch for the value of Moodle and our services, get Moodle
+            today.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <section id="carousel" class="container is-fullhd">
+      <div class="right-arrow">
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="carousel-container">
+        <div class="c c-1">
+          <div class="img-container">
+            <img src="./assets/carousel_1.webp" alt="" />
+          </div>
+        </div>
+        <div class="c c-2">
+          <div class="img-container">
+            <img src="./assets/carousel_2.webp" alt="" />
+          </div>
+        </div>
+        <div class="c c-3">
+          <div class="img-container">
+            <img src="./assets/carousel_3.webp" alt="" />
+          </div>
+        </div>
+        <div class="c c-4">
+          <div class="img-container">
+            <img src="./assets/carousel_4.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="left-arrow">
+        <span><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+    </section>
+
+    <footer id="footer" class="">
+      <div class="footer-container container is-fullhd">
+        <div class="logo-container">
+          <img src="./assets/moodle-logo-2.svg" alt="Moodle logo" />
+        </div>
+        <div class="footer-grid-container">
+          <div class="grid grid-1">
+            <ul>
+              <li class="title">Solutions</li>
+              <li>Corporate LMS – On-premises (BizLMS)</li>
+              <li>Education LMS – On Premises (CobaltLMS)</li>
+              <li>Moodle Workplace – SaaS hosted</li>
+              <li>Moodle LMS</li>
+            </ul>
+          </div>
+          <div class="grid grid-2">
+            <ul>
+              <li class="title">Services</li>
+              <li>Customisation</li>
+              <li>Hosting</li>
+              <li>Support and Training</li>
+            </ul>
+          </div>
+          <div class="grid grid-3">
+            <ul>
+              <li class="title">Customers</li>
+              <li>K-12</li>
+              <li>Higher Education</li>
+              <li>Vocational Training</li>
+              <li>Workplace</li>
+              <ul>
+                <li>Government</li>
+                <li>Healthcare</li>
+                <li>IT & Technology</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="grid grid-4">
+            <ul>
+              <li class="title">Certified Integrations</li>
+              <li>LearnerScript</li>
+              <li>Zatuk</li>
+              <li>Other Certified Integrations</li>
+            </ul>
+          </div>
+          <div class="grid grid-5">
+            <ul>
+              <li class="title">About us</li>
+              <li>About us</li>
+              <ul>
+                <li>Open Source</li>
+                <li>Moodle's AI principles</li>
+              </ul>
+              <li>Blog</li>
+              <li>Events</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-container container is-fullhd">
+        <div class="left-cookie display-flex-2x2-wrap">
+          <div class="cookie-policy">
+            <p>Cookies Policy</p>
+          </div>
+          <div class="privacy">
+            <p>Privacy Notice</p>
+          </div>
+          <div class="follow">
+            <p>Follow us:</p>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+            <span><i class="fa-brands fa-square-instagram"></i></span>
+            <span> </span>
+          </div>
+        </div>
+        <div class="right-cookie"></div>
+      </div>
+    </footer>
+    <div class="bottom">
+      <div class="bottom-container container is-fullhd">
+        <p>Copyright © 2024 Moodle All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
