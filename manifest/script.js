@@ -2563,12 +2563,14 @@ const docPageTemplate = {
           children: [
             {
               tag: "span",
-              children: {
-                tag: "i",
-                attributes: {
-                  class: "fa-solid fa-arrow-right",
+              children: [
+                {
+                  tag: "i",
+                  attributes: {
+                    class: "fa-solid fa-arrow-right",
+                  },
                 },
-              },
+              ],
             },
           ],
         },

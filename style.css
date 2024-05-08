@@ -907,8 +907,9 @@ details.dropdown summary + ul[role="nav-drop"] {
 @media only screen and (max-width: 600px) {
   /* hero section */
   .hero-section {
-    height: 80rem;
+    height: 60rem;
   }
+  /* sections */
   .section-container .section-content .section-right {
     width: 80%;
   }
@@ -923,6 +924,13 @@ details.dropdown summary + ul[role="nav-drop"] {
   .features-heading h3 {
     padding: 10px 20px;
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* hero section */
+  .hero-section {
+    height: 80rem;
   }
 }
 @media only screen and (max-width: 400px) {
