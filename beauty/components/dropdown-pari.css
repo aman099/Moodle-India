@@ -7,12 +7,11 @@ details.dropdown summary {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 3px;
-
 }
 
 details.dropdown summary::after,
-details.dropdown>a::after,
-details.dropdown>button::after {
+details.dropdown > a::after,
+details.dropdown > button::after {
   display: block;
   width: 1rem;
   height: calc(1rem * 1.5);
@@ -26,7 +25,7 @@ details.dropdown>button::after {
   content: "";
 }
 
-details.dropdown summary+ul {
+details.dropdown summary + ul {
   list-style-type: none;
   background-color: #fff;
   color: inherit;
@@ -37,21 +36,20 @@ details.dropdown summary+ul {
   width: 100%;
 }
 
-details.dropdown summary+ul li {
+details.dropdown summary + ul li {
   padding: 0.5rem 1rem;
 }
 
-details.dropdown summary+ul[role="nav-drop"] {
+details.dropdown summary + ul[role="nav-drop"] {
   display: block;
   position: absolute;
 }
 
-details.dropdown summary+ul[role="sidebar-tree"] {
+details.dropdown summary + ul[role="sidebar-tree"] {
   display: block;
   position: unset;
   width: 100%;
 }
-
 
 nav details.dropdown summary {
   padding: 0rem 0.5rem;
@@ -62,11 +60,9 @@ nav details.dropdown summary {
   color: #676e78;
 }
 
-
-@media screen and (max-width:750px) {
-  details.dropdown summary+ul[role="nav-drop"] {
+@media screen and (max-width: 750px) {
+  details.dropdown summary + ul[role="nav-drop"] {
     position: unset;
     box-shadow: none;
-
   }
 }

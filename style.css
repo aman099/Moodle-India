@@ -21,9 +21,37 @@ body {
   background-color: #fff;
 }
 
-/* Overlay */
-.overlay {
-  /* display: none; */
+/* Pari Dropdown */
+details.dropdown summary + ul[role="nav-drop"] {
+  display: none !important;
+}
+.dropdown.active summary + ul[role="nav-drop"] {
+  display: block !important;
+  animation: fadeInDrop 0.4s ease-in !important;
+}
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dropdown {
+  position: relative;
+}
+.dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  background-color: var(--icon-color);
+  height: 2px;
+  width: 0;
+  transition: all 0.2s ease-in;
+}
+.dropdown.active::after {
+  width: 100%;
 }
 /*  */
 
@@ -68,6 +96,10 @@ body {
   color: #fff;
   background-color: var(--navbar-bg-color);
 }
+#nav_1 ul {
+  gap: 2rem;
+  padding-right: 24px;
+}
 
 #nav_2 {
   /* top: 30%; */
@@ -81,6 +113,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+#nav_1 ul:first-of-type li:nth-child(2):hover i {
+  background-color: transparent;
+  color: var(--icon-color);
+}
 #nav_1 ul:first-of-type li:nth-child(2) span:nth-child(1) {
   margin-bottom: -15px;
 }
@@ -89,6 +125,37 @@ body {
   /* margin-top: -15px; */
 }
 #nav_1 ul:first-of-type li:nth-child(2) span:nth-child(3) {
+}
+#nav_1 > ul > li:nth-child(1) {
+  padding-right: 36px;
+  /*  */
+  position: relative;
+}
+#nav_1 > ul > li:nth-child(3) {
+  background-color: #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+#nav_1 > ul > li:nth-child(3):hover {
+  background-color: var(--icon-color);
+}
+#nav_1 > ul > li:nth-child(3):hover > a i {
+  color: #fff;
+}
+#nav_1 > ul > li:nth-child(3) > a i {
+  color: #000;
+  font-size: 18px;
+}
+#nav_1 > ul > li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 50%;
+  width: 1px;
+  background-color: #dedede65;
 }
 #nav_1 i {
   font-size: 24px;
@@ -582,6 +649,9 @@ details.dropdown summary + ul[role="nav-drop"] {
   }
   /*  */
 
+  .dropdown::after {
+    bottom: -24px;
+  }
   /* Footer */
   .footer-grid-container .grid ul li {
     white-space: wrap;
