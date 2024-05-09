@@ -724,6 +724,9 @@ details.dropdown summary + ul[role="nav-drop"] {
       background-color: #fff;
     }
   }
+  .overlay .input-overlay-container {
+    width: 80%;
+  }
   .overlay.activate .input-overlay-container {
     width: 80%;
   }
@@ -733,7 +736,9 @@ details.dropdown summary + ul[role="nav-drop"] {
     /* transition: all 1s; */
     /*  */
   }
-
+  .overlay .input-overlay-container input {
+    width: 100%;
+  }
   .overlay.activate .input-overlay-container input {
     opacity: 1;
     transform: translateY(0%);
